@@ -5,6 +5,11 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  z-index: 0;
+}
+
+.question_text {
+  z-index: 1;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,7 +19,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: pink;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,6 +33,31 @@
   color: #61dafb;
 }
 
+.button_div {
+  display: inline;
+}
+.yes_button {
+  height: 50px;
+  font-size: 25px;
+  width: 70px;
+  margin-right: 30px;
+  /* margin-left: 10px; */
+  background-color: white;
+  border-radius: 10px;
+  position: inline;
+  z-index: 2;
+}
+
+.no_button {
+  height: 50px;
+  font-size: 25px;
+  width: 70px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  transition: transform 0.3s ease-in-out;
+  z-index: 2;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +65,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.app {
+  background-color: pink;
 }
